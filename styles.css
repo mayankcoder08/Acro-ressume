@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: #fec107;
+  padding: 0 10px;
+}
+
+/* .greet{
+  /* background-color: #d5dbd9; */
+  /* max-width: 800px;
+  text-align: center;
+  margin: 10px auto; */
+  /* width: 300px; */
+/* } */ 
+
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+  /* display: flex; */
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus{
+  border: 1px solid #fec107;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #ffd658;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+/* .preview-btn{
+  border: 2px solid black;
+  width: 120px;
+} */
+
+button{
+  position: relative;
+  width: 180px;
+  height: 40px;
+  font-size: 20px;
+  color: #ffd658;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+
+
+/* RESULT CSS  */
+.print{
+  border: 2px solid red;
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+}
+
+.print .header{
+  border: 2px solid green;
+  margin: 10px 20px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.content-obj{
+  border: 2px solid black;
+  margin: 40px;
+}
+.content-obj .obj-header{
+  text-align: center;
+}
+.content-obj .obj-para{
+  padding : 10px;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid blue;
+  margin: 10px 20px;
+}
+
+.left-part{
+  width: 30%;
+  text-align: left;
+  border: 1px solid salmon;
+  padding: 10px;
+}
+.left-part .contact,.education,.skills,.professional,.hobbies{
+  border: 1px solid violet;
+  margin: 10px auto;
+}
+
+.right-part{
+  width: 70%;
+  text-align: left;
+  border: 1px solid salmon;
+  padding: 10px;
+}
+.right-part .workexp, .derivatives, .projects, .achieve{
+  border: 1px solid violet;
+  margin: 10px auto;
+}
